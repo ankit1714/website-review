@@ -64,6 +64,11 @@ PRODUCTS = [
 # ==========================================
 # Includes general praise, gifting scenarios, daily-use feedback, and specific aesthetic notes
 TEMPLATES = [
+    "Good Quality",
+    "I gifted this to my friend, he liked it a lot.",
+    "Great product, highly recommended!",
+    "Gifted to my parents, they loved it. The packaging was also very secure.",
+    "Bought this for my sister's birthday, she was thrilled!",
     # General Quality & Build
     "The build quality of this {product} is {adj}. {feature} exceeded my expectations.",
     "Really satisfied with this purchase. {feature} is top notch and feels very reliable.",
