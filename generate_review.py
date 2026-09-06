@@ -60,34 +60,79 @@ PRODUCTS = [
 ]
 
 # ==========================================
-# 2. Review Templates with Product Injected
+# 2. Authentic Review Templates
 # ==========================================
+# Includes general praise, gifting scenarios, daily-use feedback, and specific aesthetic notes
 TEMPLATES = [
+    # General Quality & Build
     "The build quality of this {product} is {adj}. {feature} exceeded my expectations.",
-    "Really satisfied with this {product}. {feature} is top notch.",
-    "This {product} has a very {adj} finish and solid material. Highly recommended!",
-    "Delivery was quick and packaging was secure. The {product} looks very premium in person.",
-    "The {product} matches the photos perfectly. Feels very sturdy and {adj}.",
-    "Worth every penny. This {product} is {adj} and fits nicely into our daily kitchen use.",
-    "Impressive craftsmanship on the {product}. Exactly what I was hoping for.",
-    "Very good value for money. The {product} feels durable and {adj}."
+    "Really satisfied with this purchase. {feature} is top notch and feels very reliable.",
+    "The {product} matches the website photos completely. Feels very sturdy and {adj}.",
+    "Very {adj} finish and solid material. Definitely looks more expensive than it is.",
+    "Worth every single rupee. The {product} is {adj} and fits nicely into our daily routine.",
+    "Impressive craftsmanship on this {product}. Exactly what I was looking for.",
+    "Very good value for money. {feature} is genuinely {adj}.",
+    
+    # Practical & Daily Routine
+    "Been using this {product} for a few days now. It is practical, easy to maintain, and looks {adj}.",
+    "Ordered this after seeing good reviews, and I'm not disappointed. The {product} feels heavy and authentic.",
+    "The quality speaks for itself. Absolutely no issue, pure and {adj}.",
+    "Cleans easily and looks very graceful. Quite pleased with the purchase.",
+    "Practical design and great utility. This {product} has become a staple in my home.",
+    
+    # Aesthetics & Traditional/Modern Touch
+    "Looks stunning! The traditional look with a modern finish gives a very royal vibe.",
+    "The shine and detailing on the {product} are lovely. It adds an aesthetic touch to the counter.",
+    "Simple, elegant, and functional. You can clearly see the effort put into the finishing.",
+    
+    # Gifting & Delivery Experience
+    "Got this as a gift for family, and they loved it! Packaging was very secure and damage-free.",
+    "Delivery was timely and the box packing was neat. The {product} arrived in pristine condition.",
+    "Bought two sets of the {product} for festive gifting. Everyone appreciated the quality."
 ]
 
-ADJECTIVES = ["excellent", "superb", "durable", "high quality", "solid", "well-made", "premium", "elegant"]
-FEATURES = ["The finish", "The material quality", "The overall design", "The shine and polish", "The build weight"]
+ADJECTIVES = [
+    "superb", "durable", "solid", "well-made", "premium", "elegant",
+    "sturdy", "authentic", "classy", "long-lasting", "flawless", "refined"
+]
 
+FEATURES = [
+    "The finish", "The material quality", "The overall design", 
+    "The shine and polish", "The weight and feel", "The detailing"
+]
+
+# ==========================================
+# 3. Pan-India Name Distribution
+# ==========================================
 FIRST_NAMES = [
-    "Aarav", "Rohan", "Pooja", "Ananya", "Siddharth", "Neha", "Vikram", "Sneha",
-    "Kavita", "Aditya", "Meera", "Rahul", "Priya", "Amit", "Divya", "Karan",
-    "Shreya", "Nikhil", "Tanvi", "Arjun", "Ritu", "Deepak", "Simran", "Rajesh"
+    # North India
+    "Aarav", "Kabir", "Rohan", "Simran", "Harpreet", "Manpreet", "Gurpreet", 
+    "Neha", "Aditi", "Pooja", "Gaurav", "Nikhil", "Deepak", "Ritu", "Vikas",
+    # West & Central (Maharashtra, Gujarat, MP)
+    "Chinmay", "Tanvi", "Siddharth", "Swapnil", "Mrunal", "Ketan", "Bhavna", 
+    "Jigar", "Hardik", "Pranav", "Snehal", "Vaishali", "Parth", "Devendra",
+    # South India (Tamil Nadu, Karnataka, Kerala, AP/Telangana)
+    "Karthik", "Ananya", "Meera", "Arun", "Divya", "Suresh", "Lakshmi", 
+    "Venkatesh", "Ramya", "Ashwin", "Keerthi", "Naveen", "Gayatri", "Sanjay",
+    # East & Northeast (Bengal, Odisha, Assam, Bihar)
+    "Sourav", "Debolina", "Subhashree", "Anirban", "Priyanka", "Biswajit", 
+    "Debanjan", "Rupali", "Mousumi", "Abhishek", "Smita", "Pallavi", "Anupam"
 ]
 
 LAST_NAMES = [
-    "Sharma", "Verma", "Patel", "Mehta", "Joshi", "Gupta", "Nair", "Iyer",
-    "Kulkarni", "Deshmukh", "Singh", "Reddy", "Choudhury", "Bose", "Kapoor"
+    # North
+    "Sharma", "Verma", "Singh", "Kapoor", "Bhatia", "Malhotra", "Chopra", "Gupta", "Dhillon",
+    # West (Maharashtra & Gujarat)
+    "Patel", "Shah", "Mehta", "Deshmukh", "Kulkarni", "Joshi", "Patil", "Pawar", "Solanki",
+    # South
+    "Iyer", "Nair", "Reddy", "Rao", "Menon", "Balakrishnan", "Murthy", "Pillai", "Shetty",
+    # East
+    "Banerjee", "Chatterjee", "Mukherjee", "Das", "Bose", "Ghosh", "Mishra", "Mohapatra", "Barua"
 ]
 
-DOMAINS = ["gmail.com", "yahoo.com", "outlook.com", "icloud.com"]
+DOMAINS = [
+    "gmail.com", "yahoo.com", "outlook.com", "icloud.com", "hotmail.com"
+]
 
 def generate_entry():
     # 1. Pick a random product from the list
